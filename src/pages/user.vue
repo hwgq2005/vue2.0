@@ -1,9 +1,13 @@
+<style lang="sass" >
+    @import '../assets/css/page/user.css';
+
+</style>
 
 <template>
 
-    <div class="app-user">
-        <div class="app-user-show" >
-            <div class="app-user-img" ></div>
+    <div class="user">
+        <div class="user-show" >
+            <div class="user-img" ></div>
             
             <div class="login-status">
                 <!-- <strong>Hwgq2005</strong> -->
@@ -11,9 +15,49 @@
                 <span>/</span>
                 <a href="#/register">注册</a>
             </div>
-            <div class="app-user-show-bg" ></div>
+            <div class="user-show-bg" ></div>
         </div>
-        <div class="user-nav">
+
+        <div class="user-header module">
+            <div class="user-list">
+                <a  class="link" bindtap="linkRoute" data-name="user-order"  data-state=" ">
+                    我的订单
+                    <span class="more">查看全部</span>
+                </a>
+            </div>
+            <ul class="user-list-state">
+                <li>
+                    <a  class="link" bindtap="linkRoute" data-name="user-order" data-state="0">
+                        <img class="icon" src="../assets/images/icon/order_unpay_blue.png" alt="">
+                        <span>待付款</span>
+                        <strong class="num" >1</strong>
+                    </a >
+                </li>
+                <li>
+                    <a  class="link" bindtap="linkRoute" data-name="user-order" data-state="1">
+                        <img class="icon" src="../assets/images/icon/order_payed_blue.png" alt="">
+                        <span>待发货</span>
+                        <strong class="num" >1</strong>
+                    </a>
+                </li>
+                <li>
+                    <a  class="link" bindtap="linkRoute" data-name="user-order" data-state="2">
+                        <img class="icon" src="../assets/images/icon/order_deliver_blue.png" alt="">
+                        <span>待收货</span>
+                        <strong class="num" >1</strong>
+                    </a>
+                </li>
+                <li>
+                    <a  class="link" bindtap="linkRoute" data-name="user-order" data-state="4">
+                        <img class="icon" src="../assets/images/icon/order_complete_blue.png" alt="">
+                        <span>已完成</span>
+                        <strong class="num" >1</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="user-nav module">
             <ul>
                 <li>
                     <a href="javascript:;">
