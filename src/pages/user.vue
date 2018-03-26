@@ -62,8 +62,8 @@
                 <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
-                            <i class="icon icon-pages"></i>
-                            <span>我的项目</span>
+                            <img class="icon" src="../assets/images/icon/adrress.png" alt="">
+                            <span>地址管理</span>
                             <i class="icon icon-right-nav arrow"></i>
                         </div>
                     </a>
@@ -71,20 +71,18 @@
                 <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
-                            <i class="icon icon-share"></i>
+                            <img class="icon" src="../assets/images/icon/collection.png" alt="">
                             <span>我的收藏</span>
                             <i class="icon icon-right-nav arrow"></i>
                         </div>
                     </a>
                 </li>
-              
             </ul>
             <ul>
-               
                 <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
-                            <i class="icon icon-compose"></i>
+                            <img class="icon" src="../assets/images/icon/advice.png" alt="">
                             <span>意见反馈</span>
                             <i class="icon icon-right-nav arrow"></i>
                         </div>
@@ -93,7 +91,7 @@
                 <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
-                            <i class="icon icon-star"></i>
+                            <img class="icon" src="../assets/images/icon/help.png" alt="">
                             <span>帮助中心</span>
                             <i class="icon icon-right-nav arrow"></i>
                         </div>
@@ -102,12 +100,21 @@
                 <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
-                            <i class="icon icon-gear"></i>
-                            <span>设置</span>
+                            <img class="icon" src="../assets/images/icon/service.png" alt="">
+                            <span>客服电话</span>
                             <i class="icon icon-right-nav arrow"></i>
                         </div>
                     </a>
                 </li>
+               <!--  <li>
+                    <a href="javascript:;">
+                        <div class="user-nav-tit">
+                            <img class="icon" src="../assets/images/icon/setting.png" alt="">
+                            <span>设置</span>
+                            <i class="icon icon-right-nav arrow"></i>
+                        </div>
+                    </a>
+                </li> -->
             </ul>
         </div>
     </div>
