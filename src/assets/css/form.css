@@ -1,0 +1,116 @@
+/*====== Form ========*/
+select,
+textarea,
+
+input{
+  display: inline-block;
+  height: 34px;
+  padding: 6px 0;
+  font-family: "Ping Fang SC", "STHeiTi", "arial", "Microsoft YaHei", "SimSun", "Georgia", "Times", "Times New Roman", "serif";
+  font-size: 1.4rem;
+  line-height: 20px;
+  color: #555;
+  vertical-align: middle;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0; 
+  -webkit-appearance: none;
+}
+
+select {
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 7px 6px;
+  height: 38px;
+  line-height: 38px; }
+
+textarea {
+  height: auto;
+  overflow: hidden;
+  resize: vertical; }
+
+textarea,
+input
+{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  margin: 4px 0 0;
+  line-height: normal;
+  outline: none;
+  -webkit-appearance: none;
+  user-select: none;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+  z-index: 1; 
+}
+input[type="radio"]{
+  border-radius: 50%;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked{
+  background-color: #699FE1;
+  border: 1px solid #699FE1;
+}
+
+input[type="checkbox"]:checked:after,
+input[type="radio"]:checked:after{
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 5px;
+    border: 2px solid #fff;  
+    border-top: none;
+    border-right: none;    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 3;
+}
+
+/*defaul form */
+.form-horizontal .control-label {
+  float: left;
+  width: 76px;
+  padding-top: 8px;
+  text-align: left;
+  color: #6b6a68; }
+.form-horizontal .words {
+  padding-top: 0px; }
+.form-horizontal .control-group {
+  margin-bottom: 20px; }
+  .form-horizontal .control-group:before, .form-horizontal .control-group:after {
+    display: block;
+    line-height: 0;
+    content: ""; }
+  .form-horizontal .control-group:after {
+    clear: both; }
+.form-horizontal .control-group-list .control-label {
+  width: 100px; }
+.form-horizontal .control-group-list .controls {
+  margin-left: 110px; }
+  .form-horizontal .control-group-list .controls .help-inline {
+    font-size: 1.4rem; }
