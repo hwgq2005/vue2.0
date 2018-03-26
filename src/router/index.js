@@ -17,15 +17,6 @@ const router = new Router({
         }]
     }, 
     {
-        path: '/person',
-        component: require('../pages/person.vue')
-    }, {
-        path: '/message',
-        component: require('../pages/message.vue'),
-        meta: {
-            requireAuth: true, // 添加该字段，表示进入这个路由是需要登录的
-        }
-    }, {
         path: '/user',
         component: require('../pages/user.vue')
     }, {

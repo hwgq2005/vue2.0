@@ -77,17 +77,20 @@
             handleSubmit:function(){
              
               if (this.$vuerify.check()) {
-                ui.Toast.default({
+                Toast({
                     message: '注册成功',
-                    position: 'middle'
+                    position: 'middle',
+                    duration:1000
                 })
+                
               }else{
                 var index = 0;
                 for(var i in this.$vuerify.$errors){
                   if (index == 0) {
-                    ui.Toast.default({
+                    Toast({
                       message: this.$vuerify.$errors[i],
-                      position: 'middle'
+                      position: 'middle',
+                      duration:1000
                     })
                   }
                   index ++;

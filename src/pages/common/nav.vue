@@ -49,17 +49,10 @@
         <router-link to="/" :class="{'active':currentRoute == '/'}" ><i class="icon icon-compose"></i><span>任务</span></router-link>
       </li>
       <li >
-        <router-link to="/person" :class="{'active':currentRoute == '/person'}"><i class="icon icon-person"></i><span>好友</span></router-link>
-      </li>
-      <li >
-        <router-link to="/message" :class="{'active':currentRoute == '/message'}"><i class="icon icon-sound"></i><span>消息</span></router-link>
-      </li >
-      <li >
         <router-link to="/user" :class="{'active':currentRoute == '/user'}"><i class="icon icon-gear"></i><span>我</span></router-link>
       </li>
      </ul>
   </nav>
-
 
 </template>
 
