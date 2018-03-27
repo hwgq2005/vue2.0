@@ -20,18 +20,9 @@
 .user .user-show .login-status a {
   color: #fff;
 }
-.user .user-show-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image:url(../../images/aa/user-img1.jpg);
-  opacity: 0.04;
-  z-index: -1;
-}
-.user .user-show-bg, .user .user-show .user-img {
-  background-image:url(../../images/user-img.jpg);
+
+.user .user-show .user-img {
+  background-color:#ddd;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -92,6 +83,7 @@
   display: inline-block;
   padding: 14px;
   color: #666;
+
 }
 
 .user-header .user-list-state li .link .icon{
@@ -104,11 +96,16 @@
   position: absolute;
   top: 6px;
   left: 45px;
-  padding: 1px 5px;
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 5px;
   border-radius: 10px;
   background-color: #fe6457;
   color: #fff;
   font-size: 12px;
+  box-sizing: border-box;
+  font-family: 'Arial';
 }
 
 .user-header .user-list-state li i {
@@ -129,24 +126,26 @@
   position: relative;
   z-index: 2;
 }
-.user-nav ul li:hover {
-  background: #f8f8f8;
-}
+
 .user-nav ul li a {
   display: block;
   color: #666;
   font-size: 14px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
 }
 .user-nav ul li a .user-nav-tit {
   position: relative;
-  margin: 0 1rem;
+  margin: 0 15px;
   padding: 15px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .user-nav ul li a .user-nav-tit .icon{
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
   vertical-align: middle;
 }

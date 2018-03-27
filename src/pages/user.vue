@@ -7,15 +7,14 @@
 
     <div class="user">
         <div class="user-show" >
-            <div class="user-img" ></div>
-            
+            <div class="user-img"  :style="{backgroundImage: 'url('+img+')'}"></div>
             <div class="login-status">
                 <!-- <strong>Hwgq2005</strong> -->
                 <a href="#/login">登录</a>
                 <span>/</span>
                 <a href="#/register">注册</a>
             </div>
-            <div class="user-show-bg" ></div>
+            <!-- <div class="user-show-bg" ></div> -->
         </div>
 
         <div class="user-header module">
@@ -30,7 +29,7 @@
                     <a  class="link" bindtap="linkRoute" data-name="user-order" data-state="0">
                         <img class="icon" src="../assets/images/icon/order_unpay_blue.png" alt="">
                         <span>待付款</span>
-                        <strong class="num" >1</strong>
+                        <strong class="num" >11</strong>
                     </a >
                 </li>
                 <li>
@@ -68,7 +67,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+             <!--    <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
                             <img class="icon" src="../assets/images/icon/collection.png" alt="">
@@ -76,7 +75,7 @@
                             <i class="icon icon-right-nav arrow"></i>
                         </div>
                     </a>
-                </li>
+                </li> -->
             </ul>
             <ul>
                 <li>
@@ -88,7 +87,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+              <!--   <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
                             <img class="icon" src="../assets/images/icon/help.png" alt="">
@@ -96,7 +95,7 @@
                             <i class="icon icon-right-nav arrow"></i>
                         </div>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="javascript:;">
                         <div class="user-nav-tit">
@@ -123,17 +122,6 @@
 
 <script>
 
-    // var Child = require('../components/child.vue');
-
-    // Vue.component('child', {
-    //   // 声明 props
-    //   props: ['msg'],
-    //   // prop 可以用在模板内
-    //   // 可以用 `this.msg` 设置
-    //   template: Child.template
-    // });
-    // console.log(Child.template)
-    //模块编写
 
     module.exports = {
 
@@ -148,7 +136,7 @@
         },
         data:function(){
             return {
-                name:'hello'
+                img:require('../assets/images/user-img.jpg')
             }
         },
         methods: {
