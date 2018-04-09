@@ -11,7 +11,7 @@
         color: #fff;
         box-sizing: border-box;
         text-align: center;
-        z-index: 99999;
+        z-index: 99999!important;
         -webkit-transition: opacity .3s linear;
         transition: opacity .3s linear;
         &.toast-top{
